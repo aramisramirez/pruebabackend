@@ -1,0 +1,13 @@
+CREATE DATABASE prueba;
+
+use prueba
+
+
+CREATE TABLE Usuarios (
+  Id INT PRIMARY KEY IDENTITY,
+  Nombre NVARCHAR(100),
+  Correo NVARCHAR(100),
+  Contrasena NVARCHAR(255),
+  Rol NVARCHAR(50),
+  FechaCreacion DATETIME DEFAULT GETDATE()
+);
